@@ -1,0 +1,23 @@
+{
+  "name": "ebdic-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "develop": "jest --watchAll",
+    "test": "jest",
+    "test-all": "npm run test"
+  },
+  "keywords": [],
+  "author": "Aki Pehkonen",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.7",
+    "prettier": "2.5.1",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.5.5"
+  }
+}
