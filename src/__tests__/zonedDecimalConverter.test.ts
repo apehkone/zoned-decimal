@@ -84,4 +84,10 @@ describe("ZonedDecimalConverter Tests", () => {
     const result = converter.convertToNumber("00000522G", 2);
     expect(result).toBe(52.27);
   });
+
+  test("should return NaN with empty param", () => {
+    const converter = new ZonedDecimalConverter();
+    const result = converter.convertToNumber("", 2);
+    expect(result).toBe(NaN);
+  });
 });

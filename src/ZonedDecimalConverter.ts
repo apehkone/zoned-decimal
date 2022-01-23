@@ -6,7 +6,7 @@ class ZonedDecimalConverter {
     const trimmed = input.trim();
 
     if (trimmed.length == 0) {
-      return 0;
+      return NaN;
     }
 
     const lastChar = trimmed.slice(-1);
@@ -28,7 +28,7 @@ class ZonedDecimalConverter {
 
   convertToNumber(input: string, fractions: number = 0) : number {
     const integer = this.convertToInt(input) ?? 0;
-    return integer / Math.pow(10, fractions);
+    return integer != NaN ? integer / Math.pow(10, fractions) : NaN;
   }
 
   convertToString(input: number, length: number, fractions: number, paddingChar : string = "0") : string {
