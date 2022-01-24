@@ -1,3 +1,3 @@
-import ZonedDecimalConverter from "./ZonedDecimalConverter";
+import { convertToNumber, convertToString } from "./ZonedDecimalConverter";
 
-export { ZonedDecimalConverter };
+export { convertToNumber, convertToString };

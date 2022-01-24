@@ -1,12 +1,10 @@
+# zoned-decimal
 
-# zoned-decimal # 
+A small utility library for working with EBCDIC zoned-decimal values where the last character represents the sign (positive/negative) of the number as well as the last digit of the number. This format might be seen in legacy COBOL / mainframe file integrations.
 
-A small utility library for working with EBCDIC zoned-decimal values where the last character represents the sign (positive/negative) of the number as well as the last digit of the number. This format might be seen in legacy COBOL / mainframe file integrations. 
+## Usage
 
-
-## Usage ##
-
-### Convert decimal to string ###
+### Convert decimal to string
 
 ```JS
     const converter = new ZonedDecimalConverter();
@@ -14,7 +12,7 @@ A small utility library for working with EBCDIC zoned-decimal values where the l
     expect(result).toBe("00000522G");
 ```
 
-### Convert string to decimal ### 
+### Convert string to decimal
 
 ```JS
     const converter = new ZonedDecimalConverter();
