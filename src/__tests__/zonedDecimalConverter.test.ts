@@ -1,4 +1,4 @@
-import { convertToString, convertToNumber } from "../ZonedDecimalConverter";
+import { convertToString, convertToNumber } from "../zonedDecimalConverter";
 
 describe("ZonedDecimalConverter Tests", () => {
   test("should convert positive values", () => {
