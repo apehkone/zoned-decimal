@@ -84,4 +84,9 @@ describe("ZonedDecimalConverter Tests", () => {
     const result = convertToNumber("", 2);
     expect(result).toBe(NaN);
   });
+
+  test("should convert negative", () => {
+    const result = convertToString(-123.09, 9, 2);
+    expect(result).toBe("00001230R");
+  });
 });

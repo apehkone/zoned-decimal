@@ -36,9 +36,9 @@ const convertToString = (
   fractions: number,
   paddingChar: string = "0"
 ): string => {
-  const integer = input * Math.pow(10, fractions);
+  const integer = (input < 0 ? input * -1 : input) * Math.pow(10, fractions)
   const lastDigit = integer % 10;
-  const lastChar = integer > 0 ? positive[lastDigit] : negative[lastDigit];
+  const lastChar = input >= 0 ? positive[lastDigit] : negative[lastDigit];
 
   return (integer.toString().slice(0, -1) + lastChar).padStart(
     length,
